@@ -1,0 +1,9 @@
+/bin/
+/target/
+.project
+.settings
+/cache/
+.classpath
+.DS_Store
+./test.txt
+./test2.txt

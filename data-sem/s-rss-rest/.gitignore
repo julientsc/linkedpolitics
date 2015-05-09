@@ -1,0 +1,9 @@
+bin/
+cache/
+target/
+.settings/
+
+.classpath
+.project
+
+lastUpdate.json

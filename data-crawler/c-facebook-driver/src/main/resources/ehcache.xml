@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ehcache name="FbCache">
+	<diskStore path="user.home/blublu" />
+
+
+	<defaultCache maxElementsInMemory="10000" eternal="true"
+		timeToIdleSeconds="120" timeToLiveSeconds="120" overflowToDisk="true"
+		maxElementsOnDisk="10000000" diskPersistent="true"
+		diskExpiryThreadIntervalSeconds="120" memoryStoreEvictionPolicy="LRU" />
+	<cache name="post" maxElementsInMemory="1" eternal="true"
+		overflowToDisk="true" timeToIdleSeconds="300" timeToLiveSeconds="600"
+		diskPersistent="true" memoryStoreEvictionPolicy="LFU" />
+	<cache name="comment" maxElementsInMemory="1" eternal="true"
+		overflowToDisk="true" timeToIdleSeconds="0" timeToLiveSeconds="0"
+		diskPersistent="true" memoryStoreEvictionPolicy="LFU" />
+	<cache name="page" maxElementsInMemory="1" eternal="true"
+		overflowToDisk="true" timeToIdleSeconds="0" timeToLiveSeconds="0"
+		diskPersistent="true" memoryStoreEvictionPolicy="LFU" />
+</ehcache>
